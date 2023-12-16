@@ -23,7 +23,7 @@ const checkWinner = (board) => {
   if (checkLine(board[0][2], board[1][1], board[2][0])) {
     return board[0][2]; // Returns diagonal winner from top right corner to left bottom corner
   }
-  return null;
+  return null; // Returns null if draw
 };
 
 const isBoardFull = (board) => {
