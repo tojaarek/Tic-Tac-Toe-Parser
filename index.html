@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe Parser</title>
+  <!-- Styles -->
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(3, 72px);
+      list-style: none;
+      padding: 0;
+    }
+
+    input {
+      width: 32px;
+      height: 32px;
+      padding: 20px 20px;
+      font-size: 40px;
+      outline: none;
+      border-radius: 0;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Tic Tac Toe Parser</h1>
+  <!-- Game board -->
+  <ul>
+    <li><input type="text" maxlength="1" id="a1" /></li>
+    <li><input type="text" maxlength="1" id="a2" /></li>
+    <li><input type="text" maxlength="1" id="a3" /></li>
+    <li><input type="text" maxlength="1" id="b1" /></li>
+    <li><input type="text" maxlength="1" id="b2" /></li>
+    <li><input type="text" maxlength="1" id="b3" /></li>
+    <li><input type="text" maxlength="1" id="c1" /></li>
+    <li><input type="text" maxlength="1" id="c2" /></li>
+    <li><input type="text" maxlength="1" id="c3" /></li>
+  </ul>
+  <!-- Chceck button -->
+  <button onclick="parseBoard()">Check</button>
+  <!-- Board prasing result -->
+  <div id="results"></div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
